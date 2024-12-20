@@ -17,6 +17,8 @@ repositories {
     mavenCentral()
 }
 
+val mockitoAgent = configurations.create("mockitoAgent") {}
+
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
@@ -26,8 +28,13 @@ dependencies {
     // Force bumping internal Spring Boot dependencies
     implementation("ch.qos.logback:logback-classic:1.5.14+")
     implementation("ch.qos.logback:logback-core:1.5.14+")
+
+    testImplementation("org.mockito:mockito-bom:5.14.0")
+    testImplementation("org.mockito:mockito-core")
+    mockitoAgent("org.mockito:mockito-core") { isTransitive = false }
 }
 
 tasks.withType<Test> {
+    jvmArgs("-javaagent:${mockitoAgent.asPath}")
     useJUnitPlatform()
 }
