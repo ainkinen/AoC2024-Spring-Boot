@@ -7,7 +7,5 @@ import org.springframework.boot.test.context.SpringBootTest;
 class AoC2024JavaApplicationTests {
 
     @Test
-    void contextLoads() {
-    }
-
+    void contextLoads() {}
 }

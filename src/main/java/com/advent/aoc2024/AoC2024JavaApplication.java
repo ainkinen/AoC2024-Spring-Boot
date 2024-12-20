@@ -9,5 +9,4 @@ public class AoC2024JavaApplication {
     public static void main(String[] args) {
         SpringApplication.run(AoC2024JavaApplication.class, args);
     }
-
 }
