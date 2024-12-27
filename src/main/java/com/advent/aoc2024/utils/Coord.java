@@ -15,7 +15,15 @@ public record Coord(int x, int y) {
         return new Coord(this.x - delta.x(), this.y - delta.y());
     }
 
+    public Coord mod(int max_x, int max_y) {
+        return new Coord(((this.x % max_x) + max_x) % max_x, ((this.y % max_y) + max_y) % max_y);
+    }
+
     public boolean inRange(IntegerRange range) {
         return range.contains(this.x) && range.contains(this.y);
+    }
+
+    public boolean inRange(IntegerRange x_range, IntegerRange y_range) {
+        return x_range.contains(this.x) && y_range.contains(this.y);
     }
 }
