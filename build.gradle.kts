@@ -30,6 +30,7 @@ dependencies {
     implementation("ch.qos.logback:logback-core:1.5.14+")
 
     implementation("org.apache.commons:commons-lang3:3.17.0")
+    implementation("org.apache.commons:commons-math3:3.6.1")
 
     testImplementation("org.mockito:mockito-bom:5.14.0")
     testImplementation("org.mockito:mockito-core")
