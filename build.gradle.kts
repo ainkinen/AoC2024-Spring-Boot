@@ -31,6 +31,7 @@ dependencies {
 
     implementation("org.apache.commons:commons-lang3:3.17.0")
     implementation("org.apache.commons:commons-math3:3.6.1")
+    implementation("com.google.guava:guava:32.1.3-jre")
 
     testImplementation("org.mockito:mockito-bom:5.14.0")
     testImplementation("org.mockito:mockito-core")
