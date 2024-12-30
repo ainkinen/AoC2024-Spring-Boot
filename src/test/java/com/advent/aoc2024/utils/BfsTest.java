@@ -104,7 +104,6 @@ class BfsTest {
         @Test
         void returnsAllPaths() {
             assertEquals(4, paths.size());
-            System.out.println(paths);
         }
     }
 }
