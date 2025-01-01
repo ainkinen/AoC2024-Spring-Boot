@@ -1,6 +1,6 @@
 package com.advent.aoc2024.days;
 
-import com.advent.aoc2024.interfaces.BothParts;
+import com.advent.aoc2024.interfaces.Day;
 
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.stereotype.Component;
@@ -11,7 +11,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 @Component
-public class Day22 implements BothParts {
+public class Day22 implements Day {
     public static class SecretNumberGenerator implements Iterator<BigInteger> {
         BigInteger current;
 

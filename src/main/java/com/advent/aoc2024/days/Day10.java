@@ -1,6 +1,6 @@
 package com.advent.aoc2024.days;
 
-import com.advent.aoc2024.interfaces.BothParts;
+import com.advent.aoc2024.interfaces.Day;
 import com.advent.aoc2024.utils.Bfs;
 import com.advent.aoc2024.utils.Coord;
 import com.advent.aoc2024.utils.Direction;
@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 @Component
-public class Day10 implements BothParts {
+public class Day10 implements Day {
 
     private final Bfs bfs;
 

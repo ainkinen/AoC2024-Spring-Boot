@@ -2,14 +2,14 @@ package com.advent.aoc2024.days;
 
 import static com.advent.aoc2024.utils.GraphUtils.getAllMaximalCliques;
 
-import com.advent.aoc2024.interfaces.BothParts;
+import com.advent.aoc2024.interfaces.Day;
 
 import org.springframework.stereotype.Component;
 
 import java.util.*;
 
 @Component
-public class Day23 implements BothParts {
+public class Day23 implements Day {
 
     private Map<String, TreeSet<String>> parseGraph(String input) {
         String[] lines = input.split("\n");

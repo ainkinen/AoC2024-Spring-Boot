@@ -2,7 +2,7 @@ package com.advent.aoc2024.days;
 
 import static java.lang.Math.abs;
 
-import com.advent.aoc2024.interfaces.BothParts;
+import com.advent.aoc2024.interfaces.Day;
 import com.advent.aoc2024.utils.*;
 
 import org.apache.commons.collections4.iterators.PermutationIterator;
@@ -15,7 +15,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 @Component
-public class Day21 implements BothParts {
+public class Day21 implements Day {
     private final HashMap<Character, Coord> NUMERICAL;
     private final HashMap<Character, Coord> DIRECTIONAL;
     private final HashMap<CoordDelta, Character> DIR_MAP;

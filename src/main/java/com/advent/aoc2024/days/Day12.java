@@ -1,6 +1,6 @@
 package com.advent.aoc2024.days;
 
-import com.advent.aoc2024.interfaces.BothParts;
+import com.advent.aoc2024.interfaces.Day;
 import com.advent.aoc2024.utils.CompassDirection;
 import com.advent.aoc2024.utils.CoordDelta;
 
@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Component
-public class Day12 implements BothParts {
+public class Day12 implements Day {
     private record Node(int x, int y, char id) {}
 
     private record Input(

@@ -1,6 +1,6 @@
 package com.advent.aoc2024.days;
 
-import com.advent.aoc2024.interfaces.BothParts;
+import com.advent.aoc2024.interfaces.Day;
 
 import org.springframework.stereotype.Component;
 
@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.regex.Pattern;
 
 @Component
-public class Day07 implements BothParts {
+public class Day07 implements Day {
 
     static final Pattern number = Pattern.compile("(\\d+)");
 

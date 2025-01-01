@@ -1,6 +1,6 @@
 package com.advent.aoc2024.days;
 
-import com.advent.aoc2024.interfaces.BothParts;
+import com.advent.aoc2024.interfaces.Day;
 
 import org.springframework.stereotype.Component;
 
@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 @Component
-public class Day24 implements BothParts {
+public class Day24 implements Day {
     private record Gate(String input1, String input2, String op, String output) {}
 
     private record Input(Map<String, Boolean> inputStates, List<Gate> gates) {}

@@ -1,6 +1,6 @@
 package com.advent.aoc2024.days;
 
-import com.advent.aoc2024.interfaces.BothParts;
+import com.advent.aoc2024.interfaces.Day;
 import com.advent.aoc2024.utils.Bfs;
 import com.advent.aoc2024.utils.Coord;
 import com.advent.aoc2024.utils.Direction;
@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 @Component
-public class Day18 implements BothParts {
+public class Day18 implements Day {
 
     Bfs bfs;
 

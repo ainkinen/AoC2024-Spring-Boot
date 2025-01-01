@@ -2,7 +2,7 @@ package com.advent.aoc2024.days;
 
 import static java.lang.Math.abs;
 
-import com.advent.aoc2024.interfaces.BothParts;
+import com.advent.aoc2024.interfaces.Day;
 
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.stereotype.Component;
@@ -14,7 +14,7 @@ import java.util.function.Predicate;
 import java.util.stream.IntStream;
 
 @Component
-public class Day02 implements BothParts {
+public class Day02 implements Day {
 
     private List<List<Integer>> parse(String input) {
         return input.lines()

@@ -2,7 +2,7 @@ package com.advent.aoc2024.days;
 
 import static java.lang.Math.abs;
 
-import com.advent.aoc2024.interfaces.BothParts;
+import com.advent.aoc2024.interfaces.Day;
 
 import org.springframework.stereotype.Component;
 
@@ -13,7 +13,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 @Component
-public class Day01 implements BothParts {
+public class Day01 implements Day {
     private record Lists(List<Integer> left, List<Integer> right) {}
 
     private Lists parse(String input) {

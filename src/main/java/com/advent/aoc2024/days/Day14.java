@@ -2,7 +2,7 @@ package com.advent.aoc2024.days;
 
 import static java.lang.Math.sqrt;
 
-import com.advent.aoc2024.interfaces.BothParts;
+import com.advent.aoc2024.interfaces.Day;
 import com.advent.aoc2024.utils.Coord;
 import com.advent.aoc2024.utils.CoordDelta;
 
@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 @Component
-public class Day14 implements BothParts {
+public class Day14 implements Day {
 
     private record Robot(Coord loc, CoordDelta delta) {}
 

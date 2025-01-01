@@ -3,7 +3,7 @@ package com.advent.aoc2024.days;
 import static java.lang.Math.abs;
 import static java.lang.Math.round;
 
-import com.advent.aoc2024.interfaces.BothParts;
+import com.advent.aoc2024.interfaces.Day;
 
 import org.apache.commons.math3.linear.Array2DRowRealMatrix;
 import org.apache.commons.math3.linear.LUDecomposition;
@@ -14,7 +14,7 @@ import java.util.*;
 import java.util.regex.Pattern;
 
 @Component
-public class Day13 implements BothParts {
+public class Day13 implements Day {
 
     private record XY(long x, long y) {}
 

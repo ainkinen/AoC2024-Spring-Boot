@@ -2,11 +2,12 @@ package com.advent.aoc2024.days;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class Day01Test {
 
-    private final Day01 day01 = new Day01();
+    private Day01 day;
 
     private final String testInput =
             """
@@ -18,13 +19,18 @@ class Day01Test {
             3   3
             """;
 
+    @BeforeEach
+    void setUp() {
+        day = new Day01();
+    }
+
     @Test
     void part1() {
-        assertEquals(11, day01.part1(testInput));
+        assertEquals(11, day.part1(testInput));
     }
 
     @Test
     void part2() {
-        assertEquals(31L, day01.part2(testInput));
+        assertEquals(31L, day.part2(testInput));
     }
 }

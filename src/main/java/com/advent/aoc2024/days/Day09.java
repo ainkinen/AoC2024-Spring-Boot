@@ -1,6 +1,6 @@
 package com.advent.aoc2024.days;
 
-import com.advent.aoc2024.interfaces.BothParts;
+import com.advent.aoc2024.interfaces.Day;
 
 import org.springframework.stereotype.Component;
 
@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.stream.LongStream;
 
 @Component
-public class Day09 implements BothParts {
+public class Day09 implements Day {
     private record Block(Optional<Integer> id) {}
 
     private class Allocation {

@@ -1,6 +1,6 @@
 package com.advent.aoc2024.days;
 
-import com.advent.aoc2024.interfaces.BothParts;
+import com.advent.aoc2024.interfaces.Day;
 
 import org.springframework.stereotype.Component;
 
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 @Component
-public class Day25 implements BothParts {
+public class Day25 implements Day {
     private record Input(List<int[]> locks, List<int[]> keys) {}
 
     private Input parse(String input) {

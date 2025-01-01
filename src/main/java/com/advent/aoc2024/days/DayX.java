@@ -1,11 +1,11 @@
 package com.advent.aoc2024.days;
 
-import com.advent.aoc2024.interfaces.BothParts;
+import com.advent.aoc2024.interfaces.Day;
 
 // import org.springframework.stereotype.Component;
 //
 // @Component
-public class DayX implements BothParts {
+public class DayX implements Day {
     @Override
     public Object part1(String input) {
         return "TODO!";

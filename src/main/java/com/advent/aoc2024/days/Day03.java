@@ -1,6 +1,6 @@
 package com.advent.aoc2024.days;
 
-import com.advent.aoc2024.interfaces.BothParts;
+import com.advent.aoc2024.interfaces.Day;
 
 import org.springframework.stereotype.Component;
 
@@ -8,7 +8,7 @@ import java.util.regex.MatchResult;
 import java.util.regex.Pattern;
 
 @Component
-public class Day03 implements BothParts {
+public class Day03 implements Day {
 
     private final Pattern pattern = Pattern.compile("mul\\((\\d+),(\\d+)\\)");
     private final Pattern complex_pattern =

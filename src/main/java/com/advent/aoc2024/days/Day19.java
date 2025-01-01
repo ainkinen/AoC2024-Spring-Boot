@@ -2,7 +2,7 @@ package com.advent.aoc2024.days;
 
 import static com.advent.aoc2024.utils.StringUtils.stripPrefix;
 
-import com.advent.aoc2024.interfaces.BothParts;
+import com.advent.aoc2024.interfaces.Day;
 
 import org.springframework.stereotype.Component;
 
@@ -10,7 +10,7 @@ import java.util.*;
 import java.util.regex.Pattern;
 
 @Component
-public class Day19 implements BothParts {
+public class Day19 implements Day {
 
     private record Input(List<String> towels, List<String> patterns) {}
 

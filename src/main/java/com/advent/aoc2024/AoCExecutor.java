@@ -1,8 +1,6 @@
 package com.advent.aoc2024;
 
-import com.advent.aoc2024.interfaces.BothParts;
 import com.advent.aoc2024.interfaces.Day;
-import com.advent.aoc2024.interfaces.OnePartOnly;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -61,13 +59,9 @@ public class AoCExecutor {
 
         String input = this.inputReader.read(name);
 
-        if (day instanceof OnePartOnly onePartOnly) {
-            execPart(name, "Part 1", onePartOnly::part1, input);
-        }
+        execPart(name, "Part 1", day::part1, input);
 
-        if (day instanceof BothParts completeDay) {
-            execPart(name, "Part 2", completeDay::part2, input);
-        }
+        execPart(name, "Part 2", day::part2, input);
     }
 
     private String getDay(String input) {
